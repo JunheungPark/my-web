@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MyDog - Welcome</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 45px;
+        text-align: left;
+        border-bottom: 1px gray solid;
+        margin: 5px;
+        padding: 20px;
+      }
+      ol {
+        border-right: 1px gray solid;
+        width: 100px;
+        margin: 0px;
+        padding: 20px;
+      }
+      #active {
+        color: green;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        padding-left: 33px;
+      }
+      #article {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      table {
+        width: 100%;
+        border: 1px solid #444444;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid #444444;
+        padding: 5px;
+      }
+      @media(max-width: 800px) {
+        #grid {
+          display: block;
+          grid-template-columns: 150px 1fr;
+        }
+        ol {
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <body>
+    <h1><a href="mydog.html"> <img src="mydog.png" width="50px"> MyDog</font></a></h1>
+    <!-- <div id="grid"> -->
+      <!-- <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol> -->
+
+      <div id="article">
+        <p style="padding-bottom:20px">
+          <b>수집URL</b> &nbsp; <input type="text" size="50px" style="height:20px;" autofocus> &nbsp; &nbsp;
+          <b>마진율</b> &nbsp; <input type="text" size="30px" style="height:20px;"> &nbsp; &nbsp;
+          <b>파일명</b> &nbsp; <input type="text" size="40px" style="height:20px;"> &nbsp; &nbsp;
+          <input style="float:right; width:70px; height:30px;" type="button" value="대량등록" disabled>
+          <input style="float:right; width:70px; height:30px;" type="button" value="수집하기">
+        </p>
+        <p>
+          <h2 style="display:inline;">데이터수집</h2> (Status : 대기) <input style="float:right; width:90px; height:30px;" type="button" value="엑셀다운로드">
+        </p>
+        <p>
+          <table>
+            <thead bgcolor="lightgray">
+              <th style="width:5%">No</th>
+              <th style="width:35%">품목</th>
+              <th style="width:20%">수량</th>
+              <th style="width:20%">단가</th>
+              <th style="width:20%">금액</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center">1</td>
+                <td style="text-align:left">제품</td>
+                <td style="text-align:right">10</td>
+                <td style="text-align:right">1000</td>
+                <td style="text-align:right">10000</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">2</td>
+                <td style="text-align:left">상품</td>
+                <td style="text-align:right">20</td>
+                <td style="text-align:right">3000</td>
+                <td style="text-align:right">60000</td>
+              </tr>
+              <tr>
+                <td style="text-align:center">3</td>
+                <td style="text-align:left">원재료</td>
+                <td style="text-align:right">5</td>
+                <td style="text-align:right">10000</td>
+                <td style="text-align:right">50000</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+      </div>
+    <!-- </div> -->
+  </body>
+</html>
